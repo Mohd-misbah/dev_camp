@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "portfolios/angular"
+  get "portfolios/index"
+  get "portfolios/edit"
 namespace :admin do
   get 'dashboard/main'
   get "dashboard/user"
