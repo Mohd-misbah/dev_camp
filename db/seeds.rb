@@ -27,3 +27,15 @@ In nature's arms, we all belong.",
   thumb_image: "http://www.placeholder.com/600x400"
 )
 end
+3.times do |technology|
+ Technology.create!(
+  name: "Technology #{technology}",
+  portfoilio_id: Portfolio.last.id
+  )
+end
+
+3.times do |technology|
+ Portfolio.last.technologies.create!(
+  name: "Technology #{technology}",
+  )
+end
