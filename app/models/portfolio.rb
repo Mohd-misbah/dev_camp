@@ -1,4 +1,6 @@
 class Portfolio < ApplicationRecord
+    includes Placeholder
+    validates_presence_of :title, :body, :main_image , :thumb_image
     def self.angular
         where(section: "sss")
     end
@@ -13,6 +15,6 @@ class Portfolio < ApplicationRecord
     end
 end
 
-if self.main_image == nil
-    self.main_image = "httooso"
-end
+# if self.main_image == nil
+#     self.main_image = "httooso"
+# end
