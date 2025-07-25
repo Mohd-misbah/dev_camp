@@ -1,2 +1,19 @@
 <h1>Portfolios#index</h1>
 <p>Find me in app/views/portfolios/index.html.erb</p>
+
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Blogs" %>
+
+<h1>Portfolio</h1>
+
+<div id="portfolio">
+  <% @portfolios.each do |portfolio| %>
+    <p>
+      <%= link_to "Show this blog", portfolio %>
+      
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Portfolio", new_portfolio_path %>

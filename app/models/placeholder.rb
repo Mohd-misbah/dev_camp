@@ -1,7 +1,7 @@
 module Placeholder
  extend ActiveSupport::Concern
  
- def self.iamge_generator(height,width)
-    " https #{height} x  #{width}"
+ def self.image_generator(height:,width:)
+    "https://placehold.co/600x400 #{width} x  #{height}"
  end 
 end

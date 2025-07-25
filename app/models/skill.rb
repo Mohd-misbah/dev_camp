@@ -4,6 +4,6 @@ class Skill < ApplicationRecord
     after_initialize :set_defaults
     
     def set_defaults
-        self.badge||= "httpppsp"
+        self.badge||= "https://placehold.co/600x400"
     end
 end

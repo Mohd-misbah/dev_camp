@@ -22,4 +22,6 @@ get 'leadgen/advertising/asdf/lead' , to: 'pages#contact', as: 'lead'
 
  get 'pages/:else/:another_one', to: 'pages#something'
  root to:'pages#home'
+
+ resources :portfolios
 end
